@@ -1,7 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DASOUQI\\OneDrive - UNHCR\\Desktop\\fullstack- batch\\FinalPRO\\TripVolunteer\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\sundos\\desktop\\finalproject\\tripvolunteer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\sundos\\desktop\\finalproject\\tripvolunteer.infra\\common\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\sundos\\desktop\\finalproject\\tripvolunteer.core\\common\\idbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\sundos\\desktop\\finalproject\\tripvolunteer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +24,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Infra\\Common\\DbContext.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\Common\\DbContext.cs",
+              "ToolTip": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Infra\\Common\\DbContext.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Infra\\Common\\DbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T21:30:39.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\Common\\IDbContext.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Common\\IDbContext.cs",
+              "ToolTip": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\Common\\IDbContext.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Core\\Common\\IDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T21:29:30.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-01T21:23:20.958Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -21,19 +71,20 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T20:07:08.666Z",
+              "EditorCaption": ""
             }
           ]
         }
