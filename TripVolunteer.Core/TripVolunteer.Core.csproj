@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Data\" />
     <Folder Include="Services\" />
     <Folder Include="Repository\" />
   </ItemGroup>
