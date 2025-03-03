@@ -1,5 +1,9 @@
 using TripVolunteer.Core.Common;
+using TripVolunteer.Core.Repository;
+using TripVolunteer.Core.Services;
 using TripVolunteer.Infra.Common;
+using TripVolunteer.Infra.Repository;
+using TripVolunteer.Infra.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +14,20 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IDbContext, DbContext>();
-
+builder.Services.AddScoped<IInvoiceRepository, InvoiceRepository>();
+builder.Services.AddScoped<IInvoiceService, InvoiceService>();
+builder.Services.AddScoped<ITestimonialRepository, TestimonialRepository>();
+builder.Services.AddScoped<ITestimonialService, TestimonialService>();
+builder.Services.AddScoped<IGalleryRepository, GalleryRepository>();
+builder.Services.AddScoped<IGalleryService, GalleryService>();
+builder.Services.AddScoped<IPostRepository, PostRepository>();
+builder.Services.AddScoped<IPostService, PostService>();
+builder.Services.AddScoped<IStaticHomeRepository, StaticHomeRepository>();
+builder.Services.AddScoped<IStaticHomeService, StaticHomeService>();
+builder.Services.AddScoped<IContactRepository, ContactRepository>();
+builder.Services.AddScoped<IContactService, ContactService>();
+builder.Services.AddScoped<IStaticHeaderAndFooterRepository, StaticHeaderAndFooterRepository>();
+builder.Services.AddScoped<IStaticHeaderAndFooterService, StaticHeaderAndFooterService>();
 
 var app = builder.Build();
 
