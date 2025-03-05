@@ -20,7 +20,7 @@ namespace TripVolunteer.Infra.Repository
         public void deletecontact(int id)
         {
             var p = new DynamicParameters();
-            p.Add("image_id", id, dbType: DbType.Int32, direction: ParameterDirection.Input);
+            p.Add("contact_id", id, dbType: DbType.Int32, direction: ParameterDirection.Input);
             var result = _dbContext.Connection.Execute("contact_package.deletecontact", p, commandType: CommandType.StoredProcedure);
 
         }

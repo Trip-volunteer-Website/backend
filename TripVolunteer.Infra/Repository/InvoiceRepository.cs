@@ -54,7 +54,7 @@ namespace TripVolunteer.Infra.Repository
             return result.FirstOrDefault();
         }
 
-        public void UpdateCourse(Invoice invoice)
+        public void updateInvoice(Invoice invoice)
         {
             var p = new DynamicParameters();
             p.Add("invoice_id", invoice.Invoiceid, dbType: DbType.Int32, direction: ParameterDirection.Input);

@@ -7,7 +7,7 @@ namespace TripVolunteer.Core.Services
         List<Invoice> GetAllInvoices();
         void makeInvoice(Invoice invoice);
         void DeleteInvoice(int id);
-        public void UpdateCourse(Invoice invoice);
+        public void updateInvoice(Invoice invoice);
         Invoice GetInvoiceById(int id);
     }
 }

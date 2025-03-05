@@ -33,9 +33,9 @@ namespace TripVolunteer.Infra.Services
             _invoiceRepository.makeInvoice(invoice);
         }
 
-        public void UpdateCourse(Invoice invoice)
+        public void updateInvoice(Invoice invoice)
         {
-            _invoiceRepository.UpdateCourse(invoice);
+            _invoiceRepository.updateInvoice(invoice);
         }
     }
 }
