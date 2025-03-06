@@ -56,6 +56,10 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 builder.Services.AddScoped<IPaymentSarvice, PaymentSarvice>();
+builder.Services.AddScoped<IStaticHomeRepository, StaticHomeRepository>();
+builder.Services.AddScoped<IStaticHomeService, StaticHomeService>();
+builder.Services.AddScoped<IStaticHeaderAndFooterRepository, StaticHeaderAndFooterRepository>();
+builder.Services.AddScoped<IStaticHeaderAndFooterService, StaticHeaderAndFooterService>();
 builder.Services.AddAuthentication(opt => {
     opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
