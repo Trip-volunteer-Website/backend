@@ -1407,23 +1407,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sundos\\.nuget\\packages\\": {},
+    "C:\\Users\\Digi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\TripVolunteer.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\TripVolunteer.Core.csproj",
       "projectName": "TripVolunteer.Core",
-      "projectPath": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\TripVolunteer.Core.csproj",
-      "packagesPath": "C:\\Users\\Sundos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\obj\\",
+      "projectPath": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\TripVolunteer.Core.csproj",
+      "packagesPath": "C:\\Users\\Digi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Sundos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Digi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1450,8 +1450,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net6.0": {
@@ -1478,16 +1477,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\obj\\project.nuget.cache : Unexpected character encountered while parsing value: <. Path '', line 0, position 0."
-    }
-  ]
+  }
 }

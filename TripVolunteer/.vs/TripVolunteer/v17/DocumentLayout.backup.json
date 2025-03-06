@@ -1,21 +1,91 @@
-<<<<<<< HEAD
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer\\",
+  "WorkspaceRootPath": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\sundos\\desktop\\finalproject\\tripvolunteer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer.infra\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer.core\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer.core\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer.core\\services\\ipaymentsarvice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer.infra\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|solutionrelative:controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\sundos\\desktop\\finalproject\\tripvolunteer.infra\\common\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer.infra\\repository\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\sundos\\desktop\\finalproject\\tripvolunteer.core\\common\\idbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer.infra\\common\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\sundos\\desktop\\finalproject\\tripvolunteer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer.core\\repository\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer.infra\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer.infra\\repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer.infra\\services\\paymentsarvice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer.core\\services\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer.core\\repository\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer\\controllers\\checkclaimsatt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|solutionrelative:controllers\\checkclaimsatt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer.core\\common\\idbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\digi\\desktop\\final project\\backend\\tripvolunteer.infra\\tripvolunteer.infra.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\TripVolunteer.Core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Infra\\Common\\DbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\Common\\IDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,130 +95,330 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Infra\\Common\\DbContext.cs",
-              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\Common\\DbContext.cs",
-              "ToolTip": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Infra\\Common\\DbContext.cs",
-              "RelativeToolTip": "..\\TripVolunteer.Infra\\Common\\DbContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "PaymentSarvice.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Infra\\Services\\PaymentSarvice.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\Services\\PaymentSarvice.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Infra\\Services\\PaymentSarvice.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Infra\\Services\\PaymentSarvice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T21:30:39.28Z",
+              "WhenOpened": "2025-03-04T21:45:21.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPaymentSarvice.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\Services\\IPaymentSarvice.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Services\\IPaymentSarvice.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\Services\\IPaymentSarvice.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Core\\Services\\IPaymentSarvice.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T21:44:36.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T21:42:26.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAADwv0QAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T20:11:09.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PaymentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Infra\\Repository\\PaymentRepository.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\Repository\\PaymentRepository.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Infra\\Repository\\PaymentRepository.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Infra\\Repository\\PaymentRepository.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAgwA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T23:04:59.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IPaymentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\Repository\\IPaymentRepository.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Repository\\IPaymentRepository.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\Repository\\IPaymentRepository.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Core\\Repository\\IPaymentRepository.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T23:01:18.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Infra\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Infra\\Services\\UserService.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Infra\\Services\\UserService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAuwB0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T22:44:41.508Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\Common\\IDbContext.cs",
-              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Common\\IDbContext.cs",
-              "ToolTip": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\Common\\IDbContext.cs",
-              "RelativeToolTip": "..\\TripVolunteer.Core\\Common\\IDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Services\\IUserService.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\Services\\IUserService.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Core\\Services\\IUserService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA+wBIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T21:29:30.691Z",
+              "WhenOpened": "2025-03-03T22:43:15.329Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-01T21:23:20.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Infra\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Infra\\Repository\\UserRepository.cs*",
+              "RelativeToolTip": "..\\TripVolunteer.Infra\\Repository\\UserRepository.cs*",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAmwGEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T20:07:08.666Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    }
-  ]
-=======
-{
-  "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\fiiiiinal\\TripVolunteer\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\hp\\desktop\\fiiiiinal\\tripvolunteer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\hp\\desktop\\fiiiiinal\\tripvolunteer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    }
-  ],
-  "DocumentGroupContainers": [
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\fiiiiinal\\TripVolunteer\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\fiiiiinal\\TripVolunteer\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAswBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T20:52:15.215Z",
+              "WhenOpened": "2025-03-03T21:08:58.484Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\fiiiiinal\\TripVolunteer\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\fiiiiinal\\TripVolunteer\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAIwA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-01T20:49:46.427Z",
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\Repository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Repository\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\Repository\\IUserRepository.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Core\\Repository\\IUserRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T21:05:06.485Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\Common\\IDbContext.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Common\\IDbContext.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\Common\\IDbContext.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Core\\Common\\IDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T21:20:51.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Infra\\Common\\DbContext.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\Common\\DbContext.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Infra\\Common\\DbContext.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Infra\\Common\\DbContext.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwA8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T21:19:48.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CheckClaimsAtt.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer\\Controllers\\CheckClaimsAtt.cs",
+              "RelativeDocumentMoniker": "Controllers\\CheckClaimsAtt.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer\\Controllers\\CheckClaimsAtt.cs",
+              "RelativeToolTip": "Controllers\\CheckClaimsAtt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T20:48:48.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAA9wAsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T20:46:54.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Infra\\Services\\LoginService.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\Services\\LoginService.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Infra\\Services\\LoginService.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Infra\\Services\\LoginService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T20:40:02.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ILoginService.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\Services\\ILoginService.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Services\\ILoginService.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\Services\\ILoginService.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Core\\Services\\ILoginService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T20:38:56.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Infra\\Repository\\LoginRepository.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\Repository\\LoginRepository.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Infra\\Repository\\LoginRepository.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Infra\\Repository\\LoginRepository.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAowEgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T20:17:41.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ILoginRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\Repository\\ILoginRepository.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Repository\\ILoginRepository.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Core\\Repository\\ILoginRepository.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Core\\Repository\\ILoginRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T20:16:07.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TripVolunteer.Infra.csproj",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj",
+              "RelativeToolTip": "..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-02T20:05:48.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TripVolunteer.Core.csproj",
+              "DocumentMoniker": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\TripVolunteer.Core.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\TripVolunteer.Core.csproj",
+              "ToolTip": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\TripVolunteer.Core.csproj",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\TripVolunteer.Core.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-01T22:15:51.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer\\WeatherForecast.cs",
+              "RelativeToolTip": "WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T22:15:03.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-03-01T22:13:59.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Infra\\Common\\DbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Infra\\Common\\DbContext.cs",
+              "ToolTip": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Infra\\Common\\DbContext.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Infra\\Common\\DbContext.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T21:30:39.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\Common\\IDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\Common\\IDbContext.cs",
+              "ToolTip": "C:\\Users\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\Common\\IDbContext.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Sundos\\Desktop\\FinalProject\\TripVolunteer.Core\\Common\\IDbContext.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T21:29:30.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-01T21:23:20.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Digi\\Desktop\\final project\\backend\\TripVolunteer\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAvwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T20:07:08.666Z"
             }
           ]
         }
       ]
     }
   ]
->>>>>>> 515c0b15c31cd8d80dd605085502624ff9516525
 }
