@@ -1,5 +1,9 @@
 using TripVolunteer.Core.Common;
+using TripVolunteer.Core.Repository;
+using TripVolunteer.Core.Services;
 using TripVolunteer.Infra.Common;
+using TripVolunteer.Infra.Repository;
+using TripVolunteer.Infra.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +14,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IDbContext, DbContext>();
+builder.Services.AddScoped<IBankRepository, BankRepository>();
+builder.Services.AddScoped<IBankService, BankService>();
+builder.Services.AddScoped<ITripRequestRepository, TripRequestRepository>();
+builder.Services.AddScoped<ITripRequestService, TripRequestService>();
 
 
 var app = builder.Build();

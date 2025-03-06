@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace TripVolunteer.Core.Data
 {
@@ -19,9 +20,15 @@ namespace TripVolunteer.Core.Data
         public string? Status { get; set; }
         public decimal? Paymentid { get; set; }
 
+
+ 
+
         public virtual Payment? Payment { get; set; }
-        public virtual Trip Trip { get; set; } = null!;
-        public virtual Userr User { get; set; } = null!;
+       
+        public virtual Trip? Trip { get; set; } 
+        
+        public virtual Userr? User { get; set; } 
+        
         public virtual ICollection<Invoice> Invoices { get; set; }
     }
 }
