@@ -47,8 +47,7 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// ✅ Properly register dependencies
-//builder.Services.AddDbContext<DbContext>(); // Use AddDbContext for EF Core
+
 builder.Services.AddScoped<IDbContext, DbContext>();
 builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 builder.Services.AddScoped<ILoginService, LoginService>();
@@ -60,6 +59,10 @@ builder.Services.AddScoped<IStaticHomeRepository, StaticHomeRepository>();
 builder.Services.AddScoped<IStaticHomeService, StaticHomeService>();
 builder.Services.AddScoped<IStaticHeaderAndFooterRepository, StaticHeaderAndFooterRepository>();
 builder.Services.AddScoped<IStaticHeaderAndFooterService, StaticHeaderAndFooterService>();
+builder.Services.AddScoped<IBankRepository, BankRepository>();
+builder.Services.AddScoped<IBankService, BankService>();
+builder.Services.AddScoped<ITripRequestRepository, TripRequestRepository>();
+builder.Services.AddScoped<ITripRequestService, TripRequestService>();
 builder.Services.AddAuthentication(opt => {
     opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -67,6 +70,7 @@ builder.Services.AddAuthentication(opt => {
    .AddJwtBearer(options =>
    {
        options.TokenValidationParameters = new TokenValidationParameters
+
 
        {
            ValidateIssuer = false,
