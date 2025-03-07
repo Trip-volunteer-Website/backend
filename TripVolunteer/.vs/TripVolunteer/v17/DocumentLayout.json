@@ -1,20 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\FinalProject\\TripVolunteer\\",
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\user\\desktop\\finalproject\\tripvolunteer.infra\\common\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer.core\\data\\testimonial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\user\\desktop\\finalproject\\tripvolunteer.core\\common\\idbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer.infra\\services\\testimonialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\user\\desktop\\finalproject\\tripvolunteer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer.core\\repository\\itestimonialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer.core\\services\\itestimonialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer\\controllers\\testimonialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|solutionrelative:controllers\\testimonialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|solutionrelative:controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\user\\desktop\\finalproject\\tripvolunteer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer.infra\\services\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer.infra\\repository\\triprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer.core\\repository\\itriprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4631ABB-685B-4F2C-A8A8-0BB549EB0E9B}|TripVolunteer.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer.infra\\services\\tripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer.core\\services\\itripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer.core\\services\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer.infra\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C0D714D-9C52-432A-90AB-6F7373C43D9B}|..\\TripVolunteer.Infra\\TripVolunteer.Infra.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer.infra\\services\\aboutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71F3540E-BFDE-454C-9B04-4EA917766DD4}|..\\TripVolunteer.Core\\TripVolunteer.Core.csproj|c:\\users\\hp\\desktop\\final-done\\tripvolunteer.core\\services\\iaboutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,61 +70,220 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DbContext.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FinalProject\\TripVolunteer.Infra\\Common\\DbContext.cs",
-              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\Common\\DbContext.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\FinalProject\\TripVolunteer.Infra\\Common\\DbContext.cs",
-              "RelativeToolTip": "..\\TripVolunteer.Infra\\Common\\DbContext.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAgwCIAAAAoAAAAAAAAAA==",
+              "Title": "Testimonial.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Core\\Data\\Testimonial.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Data\\Testimonial.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Core\\Data\\Testimonial.cs*",
+              "RelativeToolTip": "..\\TripVolunteer.Core\\Data\\Testimonial.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:48:30.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FinalProject\\TripVolunteer.Core\\Common\\IDbContext.cs",
-              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Common\\IDbContext.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\FinalProject\\TripVolunteer.Core\\Common\\IDbContext.cs",
-              "RelativeToolTip": "..\\TripVolunteer.Core\\Common\\IDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:11:30.153Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FinalProject\\TripVolunteer\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\FinalProject\\TripVolunteer\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:58:24.706Z",
+              "WhenOpened": "2025-03-06T00:24:17.836Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ITestimonialRepository.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Core\\Repository\\ITestimonialRepository.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Repository\\ITestimonialRepository.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Core\\Repository\\ITestimonialRepository.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Core\\Repository\\ITestimonialRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T00:19:02.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestimonialService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Infra\\Services\\TestimonialService.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\Services\\TestimonialService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Infra\\Services\\TestimonialService.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Infra\\Services\\TestimonialService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T00:17:07.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ITestimonialService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Core\\Services\\ITestimonialService.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Services\\ITestimonialService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Core\\Services\\ITestimonialService.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Core\\Services\\ITestimonialService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T00:02:10.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TestimonialController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer\\Controllers\\TestimonialController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TestimonialController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer\\Controllers\\TestimonialController.cs",
+              "RelativeToolTip": "Controllers\\TestimonialController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAIwEMAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T00:01:07.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InvoiceController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer\\Controllers\\InvoiceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InvoiceController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer\\Controllers\\InvoiceController.cs",
+              "RelativeToolTip": "Controllers\\InvoiceController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T23:39:57.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InvoiceService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Infra\\Services\\InvoiceService.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\Services\\InvoiceService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Infra\\Services\\InvoiceService.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Infra\\Services\\InvoiceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T23:39:02.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TripRepository.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Infra\\Repository\\TripRepository.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\Repository\\TripRepository.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Infra\\Repository\\TripRepository.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Infra\\Repository\\TripRepository.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T20:30:53.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ITripRepository.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Core\\Repository\\ITripRepository.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Repository\\ITripRepository.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Core\\Repository\\ITripRepository.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Core\\Repository\\ITripRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T20:30:27.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FinalProject\\TripVolunteer\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\User\\Desktop\\FinalProject\\TripVolunteer\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-05T20:52:01.754Z",
+              "WhenOpened": "2025-03-03T15:16:24.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TripService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Infra\\Services\\TripService.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\Services\\TripService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Infra\\Services\\TripService.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Infra\\Services\\TripService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAADwvyIAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T14:23:01.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ITripService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Core\\Services\\ITripService.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Services\\ITripService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Core\\Services\\ITripService.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Core\\Services\\ITripService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T14:22:27.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Infra\\Services\\RoleService.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\Services\\RoleService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Infra\\Services\\RoleService.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Infra\\Services\\RoleService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T14:19:21.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IRoleService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Core\\Services\\IRoleService.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Services\\IRoleService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Core\\Services\\IRoleService.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Core\\Services\\IRoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T14:19:09.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AboutService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Infra\\Services\\AboutService.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Infra\\Services\\AboutService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Infra\\Services\\AboutService.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Infra\\Services\\AboutService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T14:15:45.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IAboutService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Core\\Services\\IAboutService.cs",
+              "RelativeDocumentMoniker": "..\\TripVolunteer.Core\\Services\\IAboutService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer.Core\\Services\\IAboutService.cs",
+              "RelativeToolTip": "..\\TripVolunteer.Core\\Services\\IAboutService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T14:14:43.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\final-done\\TripVolunteer\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T22:19:34.755Z",
               "EditorCaption": ""
             }
           ]
