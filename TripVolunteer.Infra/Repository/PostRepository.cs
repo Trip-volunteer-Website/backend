@@ -63,7 +63,7 @@ namespace TripVolunteer.Infra.Repository
             p.Add("post_title", post.Title, dbType: DbType.String, direction: ParameterDirection.Input);
             p.Add("post_content", post.Content, dbType: DbType.String, direction: ParameterDirection.Input);
             p.Add("created_at", post.Createdat, dbType: DbType.DateTime, direction: ParameterDirection.Input);
-            var result = _dbContext.Connection.Execute("invoice_package.makeInvoice", p, commandType: CommandType.StoredProcedure);
+            var result = _dbContext.Connection.Execute("post_package.updatePost", p, commandType: CommandType.StoredProcedure);
 
         }
     }
