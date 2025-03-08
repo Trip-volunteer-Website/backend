@@ -54,10 +54,16 @@ namespace TripVolunteer.Infra.Repository
         public void updateImage(Gallery gallery)
         {
             var p = new DynamicParameters();
-            p.Add("image_id", gallery.Imageid, dbType: DbType.Int32, direction: ParameterDirection.Input);
-            p.Add("image_path", gallery.Imagepath, dbType: DbType.String, direction: ParameterDirection.Input);
-            var result = _dbContext.Connection.Execute("gallery_package.updateImage", p, commandType: CommandType.StoredProcedure);
+            p.Add("image_id", gallery.Imageid, DbType.Int32, ParameterDirection.Input);
+            p.Add("image_path", gallery.Imagepath, DbType.String, ParameterDirection.Input);
 
+            _dbContext.Connection.Execute(
+                "gallery_package.updateImage",
+                p,
+                commandType: CommandType.StoredProcedure
+            );
+
+           
         }
     }
 }

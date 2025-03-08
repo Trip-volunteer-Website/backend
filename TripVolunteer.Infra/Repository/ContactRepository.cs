@@ -17,6 +17,7 @@ namespace TripVolunteer.Infra.Repository
 
         }
 
+        
         public void deletecontact(int id)
         {
             var p = new DynamicParameters();
@@ -63,7 +64,7 @@ namespace TripVolunteer.Infra.Repository
             p.Add("contact_email", contact.Email, dbType: DbType.String, direction: ParameterDirection.Input);
             p.Add("phone_number", contact.Phonenumber, dbType: DbType.Int32, direction: ParameterDirection.Input);
             p.Add("c_content", contact.Content, dbType: DbType.String, direction: ParameterDirection.Input);
-            var result = _dbContext.Connection.Execute("contact_package.makecontact", p, commandType: CommandType.StoredProcedure);
+            var result = _dbContext.Connection.Execute("contact_package.updatecontact", p, commandType: CommandType.StoredProcedure);
 
         }
     }

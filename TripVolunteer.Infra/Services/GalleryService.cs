@@ -35,7 +35,7 @@ namespace TripVolunteer.Infra.Services
 
         public void updateImage(Gallery gallery)
         {
-            _galleryRepository.updateImage(gallery);
+             _galleryRepository.updateImage(gallery);
         }
     }
 }

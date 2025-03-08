@@ -8,42 +8,41 @@ namespace TripVolunteer.API.Controllers
     [ApiController]
     public class ContactController : ControllerBase
     {
-        private readonly IContactService contactService;
-        public ContactController(IContactService
-        contactService)
+        private readonly IContactService _contactService;
+        public ContactController(IContactService contactService)
         {
-            this.contactService = contactService;
+            _contactService = contactService;
         }
         [HttpGet]
         public List<Contact> GetAllContact()
         {
-            return contactService.GetAllcontact();
+            return _contactService.GetAllcontact();
         }
 
         [HttpPost]
         public void makeContact(Contact contact)
         {
-            contactService.makecontact(contact);
+            _contactService.makecontact(contact);
         }
 
         [HttpPut]
         public void UpdateContact(Contact contact)
         {
-            contactService.updatecontact(contact);
+            _contactService.updatecontact(contact);
         }
 
         [HttpDelete]
-        [Route("DeleteInvoice/{id}")]
+        [Route("DeleteContact/{id}")]
         public void DeleteContact(int id)
         {
-            contactService.deletecontact(id);
+            _contactService.deletecontact(id);
         }
 
         [HttpGet]
         [Route("GetContactById/{id}")]
         public Contact GetContactById(int id)
         {
-            return contactService.getcontactbyid(id);
+            return _contactService.getcontactbyid(id);
         }
     }
 }
