@@ -1,10 +1,5 @@
 ﻿using Dapper;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TripVolunteer.Core.Common;
 using TripVolunteer.Core.Data;
 using TripVolunteer.Core.Repository;
@@ -54,7 +49,7 @@ namespace TripVolunteer.Infra.Repository
         public Staticheaderandfooter gethfbyid(int id)
         {
             var p = new DynamicParameters();
-            p.Add("hf_id", id, dbType: DbType.Int32, direction: ParameterDirection.Input);
+            p.Add("post_id", id, dbType: DbType.Int32, direction: ParameterDirection.Input);
 
             IEnumerable<Staticheaderandfooter> result = _dbContext.Connection.Query<Staticheaderandfooter>
                 ("headerandfooter_package.gethfbyid", p, commandType: CommandType.StoredProcedure);
