@@ -10,6 +10,9 @@ using TripVolunteer.Infra.Repository;
 using TripVolunteer.Infra.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+
+                     .AddEnvironmentVariables();
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -49,6 +52,7 @@ builder.Services.AddSwaggerGen(c =>
 
 
 builder.Services.AddScoped<IDbContext, DbContext>();
+<<<<<<< HEAD
 builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 builder.Services.AddScoped<ILoginService, LoginService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
@@ -71,6 +75,22 @@ builder.Services.AddAuthentication(opt => {
    {
        options.TokenValidationParameters = new TokenValidationParameters
 
+=======
+builder.Services.AddScoped<IInvoiceRepository, InvoiceRepository>();
+builder.Services.AddScoped<IInvoiceService, InvoiceService>();
+builder.Services.AddScoped<ITestimonialRepository, TestimonialRepository>();
+builder.Services.AddScoped<ITestimonialService, TestimonialService>();
+builder.Services.AddScoped<IGalleryRepository, GalleryRepository>();
+builder.Services.AddScoped<IGalleryService, GalleryService>();
+builder.Services.AddScoped<IPostRepository, PostRepository>();
+builder.Services.AddScoped<IPostService, PostService>();
+builder.Services.AddScoped<IStaticHomeRepository, StaticHomeRepository>();
+builder.Services.AddScoped<IStaticHomeService, StaticHomeService>();
+builder.Services.AddScoped<IContactRepository, ContactRepository>();
+builder.Services.AddScoped<IContactService, ContactService>();
+builder.Services.AddScoped<IStaticHeaderAndFooterRepository, StaticHeaderAndFooterRepository>();
+builder.Services.AddScoped<IStaticHeaderAndFooterService, StaticHeaderAndFooterService>();
+>>>>>>> repositry-service-controller--monther
 
        {
            ValidateIssuer = false,

@@ -15,12 +15,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Images\" />
+    <ProjectReference Include="..\TripVolunteer.Core\TripVolunteer.Core.csproj" />
+    <ProjectReference Include="..\TripVolunteer.Infra\TripVolunteer.Infra.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TripVolunteer.Core\TripVolunteer.Core.csproj" />
-    <ProjectReference Include="..\TripVolunteer.Infra\TripVolunteer.Infra.csproj" />
+    <Folder Include="Images\" />
   </ItemGroup>
 
 </Project>

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TripVolunteer.Core.Data;
 
+
 namespace TripVolunteer.Core.Repository
 {
     public interface IStaticHomeRepository
