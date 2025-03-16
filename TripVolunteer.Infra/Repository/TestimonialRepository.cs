@@ -61,7 +61,7 @@ namespace TripVolunteer.Infra.Repository
             p.Add("user_id", testimonial.Userid, dbType: DbType.Int32, direction: ParameterDirection.Input);
             p.Add("user_content", testimonial.Content, dbType: DbType.String, direction: ParameterDirection.Input);
             p.Add("user_status", testimonial.Status, dbType: DbType.String, direction: ParameterDirection.Input);
-            var result = _dbContext.Connection.Execute("Testimonial_package.makeTestimonial", p, commandType: CommandType.StoredProcedure);
+            var result = _dbContext.Connection.Execute("Testimonial_package.updateTestimonial", p, commandType: CommandType.StoredProcedure);
 
         }
         public void ApprovOrRejectTestimonial(int testimonialId, string newStatus)
