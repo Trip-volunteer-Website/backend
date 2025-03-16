@@ -10,6 +10,6 @@ namespace TripVolunteer.Core.Data
         public string Content { get; set; } = null!;
         public string? Status { get; set; }
 
-        public virtual Userr User { get; set; } = null!;
+        public virtual Userr? User { get; set; } 
     }
 }

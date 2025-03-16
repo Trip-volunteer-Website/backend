@@ -9,8 +9,7 @@ namespace TripVolunteer.API.Controllers
     public class InvoiceController : ControllerBase
     {
         private readonly IInvoiceService invoiceService;
-        public InvoiceController(IInvoiceService
-        invoiceService)
+        public InvoiceController(IInvoiceService invoiceService)
         {
             this.invoiceService = invoiceService;
         }
