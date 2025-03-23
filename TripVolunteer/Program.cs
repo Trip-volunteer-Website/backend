@@ -85,6 +85,7 @@ builder.Services.AddScoped<IAboutService, AboutService>();
 
 builder.Services.AddScoped<ITripRepository, TripRepository>();
 builder.Services.AddScoped<ITripService, TripService>();
+builder.Services.AddTransient<EmailService>();
 
 
 builder.Services.AddAuthentication(opt => {
@@ -104,6 +105,15 @@ builder.Services.AddAuthentication(opt => {
            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superSecretKeyDana@345"))
        };
    });
+
+builder.Services.AddCors(corsOptions =>
+{
+    corsOptions.AddPolicy("policy",
+    builder =>
+    {
+        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    });
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -116,7 +126,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseCors("policy");
 app.MapControllers();
 
 app.Run();

@@ -17,5 +17,7 @@ namespace TripVolunteer.Core.Services
         public string GetEmailUsingCursor(int userId);
         List<Userr> GetFirstAndLastName();
         int GetAge(int id);
+        Task SendEmailWithPdfAttachment(int userId, byte[] pdfBytes, string pdfFileName);
+
     }
 }

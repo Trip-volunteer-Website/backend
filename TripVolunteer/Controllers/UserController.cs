@@ -75,5 +75,22 @@ namespace TripVolunteer.API.Controllers
 
             return Ok(new { UserId = id, Age = age });
         }
+
+        [HttpPost("send-email-file")]
+        public IActionResult SendEmailWithUploadedPdf([FromForm] int userId, [FromForm] IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+                return BadRequest("No file uploaded.");
+
+            using var memoryStream = new MemoryStream();
+            file.CopyTo(memoryStream);
+            var pdfBytes = memoryStream.ToArray();
+            var fileName = file.FileName;
+
+            userService.SendEmailWithPdfAttachment(userId, pdfBytes, fileName);
+
+            return Ok("Email with uploaded PDF sent.");
+        }
+
     }
 }

@@ -12,11 +12,14 @@ namespace TripVolunteer.Infra.Services
     public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
+        private readonly EmailService _emailService;
 
-        public UserService(IUserRepository userRepository)
+        public UserService(IUserRepository userRepository, EmailService emailService)
         {
             _userRepository = userRepository;
+            _emailService = emailService;
         }
+       
         public void CreateUser(Userr userr)
         {
           _userRepository.CreateUser(userr);
@@ -56,5 +59,19 @@ namespace TripVolunteer.Infra.Services
         {
             _userRepository.UpdateUser(userr);
         }
+
+        public async Task SendEmailWithPdfAttachment(int userId, byte[] pdfBytes, string pdfFileName)
+        {
+            var email = _userRepository.GetEmailUsingCursor(userId);
+
+            if (string.IsNullOrEmpty(email))
+                throw new Exception("User email not found.");
+
+            string subject = "Welcome with PDF";
+            string body = "<p>Dear user,</p><p>Please find the attached PDF.</p>";
+
+             await _emailService.SendEmailWithPDFAsync(email, subject, body, pdfBytes);
+        }
+
     }
 }
