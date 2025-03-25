@@ -9,7 +9,9 @@ using TripVolunteer.Infra.Common;
 using TripVolunteer.Infra.Repository;
 using TripVolunteer.Infra.Services;
 
+using QuestPDF.Infrastructure;
 var builder = WebApplication.CreateBuilder(args);
+QuestPDF.Settings.License = LicenseType.Community;
 builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
 
                      .AddEnvironmentVariables();
@@ -82,7 +84,7 @@ builder.Services.AddScoped<IRoleService, RoleService>();
 
 builder.Services.AddScoped<IAboutRepository, AboutRepository>();
 builder.Services.AddScoped<IAboutService, AboutService>();
-
+builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<ITripRepository, TripRepository>();
 builder.Services.AddScoped<ITripService, TripService>();
 builder.Services.AddTransient<EmailService>();

@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TripVolunteer.Core.Data;
+using TripVolunteer.Core.DTO;
 using TripVolunteer.Core.Repository;
 using TripVolunteer.Core.Services;
+using TripVolunteer.Infra.Services;
 
 namespace TripVolunteer.API.Controllers
 {
@@ -46,6 +48,21 @@ namespace TripVolunteer.API.Controllers
         public void DeletePayment(int id)
         {
             paymentSarvice.DeletePayment(id);
+        }
+
+        [HttpPost]
+        [Route("pay")]
+        public async Task<IActionResult> Pay([FromBody] PaymentDto dto)
+        {
+            try
+            {
+                await paymentSarvice.PayAndGenerateInvoiceAsync(dto);
+                return Ok("✅ Payment completed and invoice sent to your email.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"❌ Payment failed: {ex.Message}");
+            }
         }
     }
 }
