@@ -10,7 +10,7 @@ namespace TripVolunteer.Core.Repository
     public interface IUserRepository
     {
         List<Userr> GetAllUser();
-        void CreateUser(Userr userr);
+        int CreateUser(Userr userr);
         void UpdateUser(Userr userr);
         void DeleteUser(int id);
         Userr GetUserById(int id);

@@ -19,12 +19,11 @@ namespace TripVolunteer.Infra.Services
             _userRepository = userRepository;
             _emailService = emailService;
         }
-       
-        public void CreateUser(Userr userr)
-        {
-          _userRepository.CreateUser(userr);
-        }
 
+        public int CreateUser(Userr userr)
+        {
+            return _userRepository.CreateUser(userr);
+        }
         public void DeleteUser(int id)
         {
           _userRepository.DeleteUser(id);

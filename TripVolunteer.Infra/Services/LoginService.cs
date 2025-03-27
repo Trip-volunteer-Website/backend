@@ -61,7 +61,7 @@ namespace TripVolunteer.Infra.Services
                 var claims = new List<Claim>()
                 {
                     new Claim(ClaimTypes.Name , result.Username),
-                    new Claim(ClaimTypes.Role , result.Roleid.ToString())
+                    new Claim("RoleId" , result.Roleid.ToString())
                 };
                 var tokenOption = new JwtSecurityToken(claims: claims,
                                                         expires: DateTime.Now.AddHours(24),

@@ -26,30 +26,43 @@ namespace TripVolunteer.API.Controllers
         public Gallery UploadImage()
         {
             var file = Request.Form.Files.FirstOrDefault();
+
             if (file == null || file.Length == 0)
+
                 return null;
 
             // Generate unique file name
+
             var fileName = Guid.NewGuid().ToString() + "_" + file.FileName;
 
             // Define the folder path to store images
-            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "Images");
+
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "C:\\Users\\Digi\\Desktop\\edit front\\frontend\\src\\assets\\images");
 
             // Ensure the folder exists
+
             if (!Directory.Exists(folderPath))
+
                 Directory.CreateDirectory(folderPath);
 
             var fullPath = Path.Combine(folderPath, fileName);
 
             // Save the file
+
             using (var stream = new FileStream(fullPath, FileMode.Create))
+
             {
+
                 file.CopyTo(stream);
+
             }
 
             // Save image path to database
+
             Gallery galleryItem = new Gallery { Imagepath = fileName };
+
             _galleryService.addImage(galleryItem);
+
 
             return galleryItem;
         }

@@ -69,7 +69,23 @@ namespace TripVolunteer.API.Controllers
         {
             return _tripRequestService.GetCV(id);
         }
+        [HttpPost]
+        [Route("uploadAttachment")]
+        public Triprequest UploadAttachment()
+        {
+            var file = Request.Form.Files[0];
+            var filename = Guid.NewGuid().ToString() + "_" + file.FileName;
+            var fullpath = Path.Combine("C:\\Users\\Digi\\Desktop\\edit front\\frontend\\src\\assets\\CVs", filename);
 
+            using (var stream = new FileStream(fullpath, FileMode.Create))
+            {
+                file.CopyTo(stream);
+            }
+            Triprequest tripReq = new Triprequest();
+            tripReq.Cvfilepath = filename;
+
+            return tripReq;
+        }
 
 
 

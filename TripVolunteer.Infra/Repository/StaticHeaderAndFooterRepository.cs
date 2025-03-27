@@ -67,7 +67,7 @@ namespace TripVolunteer.Infra.Repository
             p.Add("hf_logo", staticheaderandfooter.Logo, dbType: DbType.String, direction: ParameterDirection.Input);
             p.Add("hf_location", staticheaderandfooter.Location, dbType: DbType.String, direction: ParameterDirection.Input);
             p.Add("hf_content", staticheaderandfooter.Content, dbType: DbType.String, direction: ParameterDirection.Input);
-            var result = _dbContext.Connection.Execute("headerandfooter_package.createhf", p, commandType: CommandType.StoredProcedure);
+            var result = _dbContext.Connection.Execute("headerandfooter_package.updatehf", p, commandType: CommandType.StoredProcedure);
 
         }
     }

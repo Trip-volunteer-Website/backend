@@ -22,7 +22,7 @@ namespace TripVolunteer.Core.Data
         public decimal Age { get; set; }
         public decimal Roleid { get; set; }
 
-        public virtual Role Role { get; set; } = null!;
+        public virtual Role? Role { get; set; } 
         public virtual ICollection<Login> Logins { get; set; }
         public virtual ICollection<Testimonial> Testimonials { get; set; }
         public virtual ICollection<Triprequest> Triprequests { get; set; }

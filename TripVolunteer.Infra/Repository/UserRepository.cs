@@ -30,7 +30,7 @@ namespace TripVolunteer.Infra.Repository
 
             return result.ToList();
         }
-        public void CreateUser(Userr userr)
+        public int CreateUser(Userr userr)
         {
             var p = new DynamicParameters();
             p.Add("user_EMAIL", userr.Email, dbType: DbType.String, direction: ParameterDirection.Input);
@@ -41,8 +41,12 @@ namespace TripVolunteer.Infra.Repository
             p.Add("image_Path", userr.Imagepath, dbType: DbType.String, direction: ParameterDirection.Input);
             p.Add("user_age", userr.Age, dbType: DbType.Int32, direction: ParameterDirection.Input);
             p.Add("role_Id", userr.Roleid, dbType: DbType.Int32, direction: ParameterDirection.Input);
-            var result = _dbConext.Connection.Execute("userr_package.makeuser", p, commandType: CommandType.StoredProcedure);
+            p.Add("userId", dbType: DbType.Int32, direction: ParameterDirection.Output); // Correct output parameter
 
+            _dbConext.Connection.Execute("userr_package.makeuser", p, commandType: CommandType.StoredProcedure);
+
+            // Retrieve and return the userId
+            return p.Get<int>("userId");
         }
 
         public void DeleteUser(int id)

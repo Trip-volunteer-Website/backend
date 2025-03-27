@@ -29,9 +29,17 @@ namespace TripVolunteer.API.Controllers
             return userService.GetUserById(id);
         }
         [HttpPost]
-        public void CreateUser(Userr userr)
+        public IActionResult CreateUser(Userr userr)
         {
-            userService.CreateUser(userr);
+            try
+            {
+                var userId = userService.CreateUser(userr);
+                return Ok(new { Message = "User created successfully", UserId = userId });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { Message = $"Error creating user: {ex.Message}" });
+            }
         }
         [HttpPut]
         public void UpdateUser(Userr userr)
@@ -91,6 +99,21 @@ namespace TripVolunteer.API.Controllers
 
             return Ok("Email with uploaded PDF sent.");
         }
+        [HttpPost]
+        [Route("UploadImage")]
+        public Userr UploadImage()
+        {
+            var file = Request.Form.Files[0];
+            var filename = Guid.NewGuid().ToString() + "_" + file.FileName;
+            var fullpath = Path.Combine("C:\\Users\\Digi\\Desktop\\edit front\\frontend\\src\\assets\\images", filename);
+            using (var stream = new FileStream(fullpath, FileMode.Create))
+            {
+                file.CopyTo(stream);
+            }
+            Userr item = new Userr();
+            item.Imagepath = filename;
 
+            return item;
+        }
     }
 }
