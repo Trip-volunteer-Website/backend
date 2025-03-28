@@ -29,40 +29,21 @@ namespace TripVolunteer.API.Controllers
             return _postService.getPostById(id);
         }
 
-      
+
+
         [HttpPost]
-        [Route("uploadImage")]
-        public Post UploadImage()
+        [Route("UploudeImage")]
+        public Staticabout UploudeImage()
         {
-            var file = Request.Form.Files.FirstOrDefault();
-            if (file == null || file.Length == 0)
-                return null;
-
-            // Generate unique file name
-            var fileName = Guid.NewGuid().ToString() + "_" + file.FileName;
-
-            // Define the folder path where images should be saved
-            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "Images");
-
-            // Ensure the folder exists
-            if (!Directory.Exists(folderPath))
-                Directory.CreateDirectory(folderPath);
-
-            var fullPath = Path.Combine(folderPath, fileName);
-
-            // Save the file
-            using (var stream = new FileStream(fullPath, FileMode.Create))
-            {
-                file.CopyTo(stream);
-            }
-
-            // Create post object and store image path
-            Post item = new Post();
-            item.Imagepath = fileName;
-
+            var file = Request.Form.Files[0];
+            var filename = Guid.NewGuid().ToString() + "_" + file.FileName;
+            var fullpath = Path.Combine("C:\\Users\\Digi\\Desktop\\edit front\\frontend\\src\\assets\\images", filename);
+            using (var stream = new FileStream(fullpath, FileMode.Create))
+            { file.CopyTo(stream); }
+            Staticabout item = new Staticabout();
+            item.Img1path = filename;
             return item;
         }
-
         [HttpPost]
         public void CreatePost(Post post)
         {
