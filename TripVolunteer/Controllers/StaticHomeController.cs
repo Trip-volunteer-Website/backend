@@ -46,22 +46,39 @@ namespace TripVolunteer.API.Controllers
         {
             staticHomeService.deleteStaticHome(id);
         }
-
         [HttpPost]
-        [Route("UploudImage")]
-        public Statichome UploudImage()
+        [Route("UploudImage/{imgName}")]
+        public Statichome UploudImage(string imgName)
         {
-            var file = Request.Form.Files[0];
+            var file = Request.Form.Files[0]; // Get the first uploaded file
             var filename = Guid.NewGuid().ToString() + "_" + file.FileName;
-            var fullpath = Path.Combine("Images", filename);
+            var fullpath = Path.Combine("C:\\Users\\Digi\\Desktop\\edit front\\frontend\\src\\assets\\images", filename);
+
+            // Save the file
             using (var stream = new FileStream(fullpath, FileMode.Create))
             {
                 file.CopyTo(stream);
             }
+
             Statichome item = new Statichome();
-            item.P1 = file.FileName;
-            item.P2 = file.FileName;
-            item.P3 = file.FileName;
+
+            if (imgName == "img1path")
+            {
+                item.Img1path = filename;
+            }
+            else if (imgName == "img2path")
+            {
+                item.Img2path = filename;
+            }
+            else if (imgName == "img3path")
+            {
+                item.Img3path = filename;
+            }
+            else
+            {
+                throw new ArgumentException("Invalid imgName provided.");
+            }
+
             return item;
         }
     }

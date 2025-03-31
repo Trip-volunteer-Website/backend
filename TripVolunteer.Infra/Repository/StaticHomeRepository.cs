@@ -67,6 +67,7 @@ namespace TripVolunteer.Infra.Repository
         public void updateStaticHome(Statichome statichome)
         {
             var p = new DynamicParameters();
+            p.Add("static_id", statichome.Id, dbType: DbType.String, direction: ParameterDirection.Input);
             p.Add("title_1", statichome.Id, dbType: DbType.String, direction: ParameterDirection.Input);
             p.Add("title_1", statichome.Title1, dbType: DbType.String, direction: ParameterDirection.Input);
             p.Add("title_2", statichome.Title2, dbType: DbType.String, direction: ParameterDirection.Input);
@@ -77,7 +78,7 @@ namespace TripVolunteer.Infra.Repository
             p.Add("img1_path", statichome.Img1path, dbType: DbType.String, direction: ParameterDirection.Input);
             p.Add("img2_path", statichome.Img2path, dbType: DbType.String, direction: ParameterDirection.Input);
             p.Add("img3_path", statichome.Img3path, dbType: DbType.String, direction: ParameterDirection.Input);
-            var result = _dbContext.Connection.Execute("statichome_package.addStaticHome", p, commandType: CommandType.StoredProcedure);
+            var result = _dbContext.Connection.Execute("statichome_package.updateStaticHome", p, commandType: CommandType.StoredProcedure);
 
         }
     }

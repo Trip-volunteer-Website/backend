@@ -32,16 +32,26 @@ namespace TripVolunteer.API.Controllers
 
 
         [HttpPost]
-        [Route("UploudeImage")]
-        public Staticabout UploudeImage()
+        [Route("uploadImage")]
+        public Post UploadImage()
         {
             var file = Request.Form.Files[0];
-            var filename = Guid.NewGuid().ToString() + "_" + file.FileName;
-            var fullpath = Path.Combine("C:\\Users\\Digi\\Desktop\\edit front\\frontend\\src\\assets\\images", filename);
-            using (var stream = new FileStream(fullpath, FileMode.Create))
-            { file.CopyTo(stream); }
-            Staticabout item = new Staticabout();
-            item.Img1path = filename;
+
+
+            // Generate unique file name
+            var fileName = Guid.NewGuid().ToString() + "_" + file.FileName;
+
+
+            var fullPath = Path.Combine("C:\\Users\\Digi\\Desktop\\edit front\\frontend\\src\\assets\\images", fileName);
+
+            using (var stream = new FileStream(fullPath, FileMode.Create))
+            {
+                file.CopyTo(stream);
+            }
+
+            Post item = new Post();
+            item.Imagepath = fileName;
+
             return item;
         }
         [HttpPost]
