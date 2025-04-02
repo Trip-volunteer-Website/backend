@@ -123,6 +123,12 @@ namespace TripVolunteer.API.Controllers
                 }
                 else if (triprequest.Requesttype == "Volunteer")
                 {
+                    if (user.Roleid == 2)
+                    {
+                        user.Roleid = 3;
+                        _userRepository.UpdateUser(user);
+                    }
+
                     subject = "Welcome to the Trip!";
                     message = $"Dear {fullName},\n\n" +
                               "Your volunteer request has been approved — welcome to the team!\n\n" +
