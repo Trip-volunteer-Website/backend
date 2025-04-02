@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Globalization;
+using TripVolunteer.Core.Common;
 using TripVolunteer.Core.Data;
 using TripVolunteer.Core.Services;
 
@@ -11,9 +13,11 @@ namespace TripVolunteer.API.Controllers
     public class TripController : ControllerBase
     {
         private readonly ITripService tripService;
-        public TripController(ITripService tripService)
+        private readonly ITripRequestService tripRequest;
+        public TripController(ITripService tripService, ITripRequestService tripRequest)
         {
             this.tripService = tripService;
+            this.tripRequest = tripRequest;
         }
 
 
@@ -106,6 +110,34 @@ namespace TripVolunteer.API.Controllers
         public void SetLocation(int tripId, double longitude, double latitude)
         {
             tripService.SetLocation(tripId, longitude, latitude);
+        }
+
+
+        [HttpGet("availableSeats")]
+        public IActionResult GetAvailableSeats(int tripId)
+        {
+            var (maxVolunteers, maxUsers) = tripService.GetMaxVolunteersAndUsers(tripId);
+
+            var allRequests = tripRequest.GetAllTripRequests();
+            if (allRequests == null)
+            {
+                return NotFound("No trip requests found.");
+            }
+
+            int acceptedVolunteers = allRequests
+                .Count(r => r.Tripid == tripId && r.Requesttype.ToLower() == "volunteer" && r.Status == "approved");
+
+            int acceptedUsers = allRequests
+                .Count(r => r.Tripid == tripId && r.Requesttype.ToLower() == "user" && r.Status == "approved");
+
+            var result = new
+            {
+                tripid = tripId,
+                userSeats = maxUsers - acceptedUsers,
+                volunteerSeats = maxVolunteers - acceptedVolunteers
+            };
+
+            return Ok(result);
         }
 
 
