@@ -5,6 +5,7 @@ namespace TripVolunteer.Core.Repository
     public interface ITestimonialRepository
     {
         List<Testimonial> GetAllTestimonials();
+        List<Testimonial> GetAllActiveTestimonials();
         void makeTestimonial(Testimonial testimonial);
         void DeleteTestimonial(int id);
         public void UpdateTestimonial(Testimonial testimonial);

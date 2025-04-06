@@ -17,7 +17,10 @@ namespace TripVolunteer.Infra.Services
         {
             _testimonialRepository.ApprovOrRejectTestimonial(testimonialId, newStatus);
         }
-
+       public List<Testimonial> GetAllActiveTestimonials()
+        {
+            return _testimonialRepository.GetAllActiveTestimonials();
+        }
         public void DeleteTestimonial(int id)
         {
             _testimonialRepository.DeleteTestimonial(id);

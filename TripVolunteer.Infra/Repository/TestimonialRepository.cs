@@ -48,7 +48,29 @@ namespace TripVolunteer.Infra.Repository
             return testimonials;
         }
 
+       public List<Testimonial> GetAllActiveTestimonials()
+        {
+            // استرجاع بيانات Testimonial فقط من قاعدة البيانات
+            var testimonials = _dbContext.Connection.Query<Testimonial>(
+                "Testimonial_package.GetAllActiveTestimonial",
+                commandType: CommandType.StoredProcedure
+            ).ToList();
 
+            // الآن، يمكنك تحديث كل Testimonial بحيث تتضمن User المرتبط به
+            foreach (var testimonial in testimonials)
+            {
+                // استرجاع بيانات المستخدم باستخدام UserId
+                var user = _dbContext.Connection.QuerySingleOrDefault<Userr>(
+                    "SELECT * FROM Userr WHERE Userid = :UserId",
+                    new { UserId = testimonial.Userid }
+                );
+
+                // تعيين الـ User للمراجعة
+                testimonial.User = user;
+            }
+
+            return testimonials;
+        }
         public Testimonial GetTestimonialById(int id)
         {
 

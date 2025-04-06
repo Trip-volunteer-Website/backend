@@ -5,6 +5,7 @@ namespace TripVolunteer.Core.Services
     public interface ITestimonialService
     {
         List<Testimonial> GetAllTestimonials();
+        public List<Testimonial> GetAllActiveTestimonials();
         void makeTestimonial(Testimonial testimonial);
         void DeleteTestimonial(int id);
         public void UpdateTestimonial(Testimonial testimonial);
