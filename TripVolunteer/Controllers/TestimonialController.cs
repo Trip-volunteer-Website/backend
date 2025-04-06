@@ -23,6 +23,12 @@ namespace TripVolunteer.API.Controllers
             return testimonialService.GetAllTestimonials();
         }
 
+        [HttpGet]
+        [Route("active")]
+        public List<Testimonial> GetAllActiveTestimonials()
+        {
+            return testimonialService.GetAllActiveTestimonials();
+        }
         [HttpPost]
         public void makeTestimonial(Testimonial testimonial)
             
