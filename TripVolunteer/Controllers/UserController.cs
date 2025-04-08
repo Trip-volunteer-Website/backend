@@ -99,21 +99,30 @@ namespace TripVolunteer.API.Controllers
 
             return Ok("Email with uploaded PDF sent.");
         }
+
         [HttpPost]
-        [Route("UploadImage")]
+        [Route("uploadImage")]
         public Userr UploadImage()
         {
             var file = Request.Form.Files[0];
-            var filename = Guid.NewGuid().ToString() + "_" + file.FileName;
-            var fullpath = Path.Combine("C:\\Users\\Digi\\Desktop\\edit front\\frontend\\src\\assets\\images", filename);
-            using (var stream = new FileStream(fullpath, FileMode.Create))
+
+            // Generate a unique filename
+            var fileName = Guid.NewGuid().ToString() + "_" + file.FileName;
+
+            // Set the save path
+            var fullPath = Path.Combine("C:\\Users\\Sundos\\Downloads\\FinalFront\\FinalFront\\frontend\\src\\assets\\images", fileName);
+
+            using (var stream = new FileStream(fullPath, FileMode.Create))
             {
                 file.CopyTo(stream);
             }
-            Userr item = new Userr();
-            item.Imagepath = filename;
 
-            return item;
+            // Return only the image path (wrapped in a Userr object)
+            Userr result = new Userr();
+            result.Imagepath = fileName;
+
+            return result;
         }
+
     }
 }

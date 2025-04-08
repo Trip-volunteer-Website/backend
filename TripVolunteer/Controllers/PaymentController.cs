@@ -4,6 +4,7 @@ using TripVolunteer.Core.Data;
 using TripVolunteer.Core.DTO;
 using TripVolunteer.Core.Repository;
 using TripVolunteer.Core.Services;
+using TripVolunteer.Infra.Repository;
 using TripVolunteer.Infra.Services;
 
 namespace TripVolunteer.API.Controllers
@@ -54,15 +55,15 @@ namespace TripVolunteer.API.Controllers
         [Route("pay")]
         public async Task<IActionResult> Pay([FromBody] PaymentDto dto)
         {
-            try
-            {
+            //try
+            
                 await paymentSarvice.PayAndGenerateInvoiceAsync(dto);
                 return Ok("✅ Payment completed and invoice sent to your email.");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"❌ Payment failed: {ex.Message}");
-            }
+            
+            //catch (Exception ex)
+            //{
+            //    return BadRequest($"❌ Payment failed: {ex.Message}");
+            //}
         }
     }
 }

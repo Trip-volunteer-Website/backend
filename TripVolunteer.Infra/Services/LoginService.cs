@@ -64,7 +64,10 @@ namespace TripVolunteer.Infra.Services
                     new Claim("RoleId" , result.Roleid.ToString()),
                     new Claim("userId", result.Userid.ToString()),
                     new Claim("loginId", result.Loginid.ToString())
+<<<<<<< HEAD
 
+=======
+>>>>>>> 03bb5e14ea74475166e6391eeeaec92b3ac37c43
                 };
                 var tokenOption = new JwtSecurityToken(claims: claims,
                                                         expires: DateTime.Now.AddHours(24),

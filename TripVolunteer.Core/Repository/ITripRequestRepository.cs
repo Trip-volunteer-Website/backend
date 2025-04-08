@@ -17,5 +17,6 @@ namespace TripVolunteer.Core.Common
         Triprequest GetRequestStatusAndType(int request_id);
         void SetCV(int request_Id,string cv_file_path);
         Triprequest GetCV(int request_id);
+        void UpdateTripRequestPayment(decimal Requestid, decimal Paymentid);
     }
 }

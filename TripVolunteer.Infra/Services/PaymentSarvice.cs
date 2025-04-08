@@ -8,7 +8,9 @@ using TripVolunteer.Core.Repository;
 using TripVolunteer.Core.Services;
 using QuestPDF.Fluent;
 using QuestPDF.Infrastructure;
-using QuestPDF.Helpers; // لو مش موجود
+using QuestPDF.Helpers;
+using TripVolunteer.Core.Common;
+using TripVolunteer.Infra.Common; 
 
 
 
@@ -21,24 +23,29 @@ namespace TripVolunteer.Infra.Services
         private readonly IInvoiceRepository _invoiceRepo;
         private readonly IUserRepository _userRepository; // ✅ أضفناها
         private readonly IEmailService _emailService;
+        private readonly ITripRequestRepository tripReq;
 
         public PaymentSarvice(
             IPaymentRepository paymentRepository,
             IBankRepository bankRepo,
             IInvoiceRepository invoiceRepo,
             IUserRepository userRepository, // ✅ هنا كمان
-            IEmailService emailService)
+            IEmailService emailService,
+            ITripRequestRepository _tripReq)
         {
             this.paymentRepository = paymentRepository;
             _bankRepo = bankRepo;
             _invoiceRepo = invoiceRepo;
             _userRepository = userRepository; // ✅
             _emailService = emailService;
+            tripReq = _tripReq;
         }
 
-        public void CreatePayment(Payment payment)
+        public async Task<Payment> CreatePayment(Payment payment)
         {
-            paymentRepository.CreatePayment(payment);
+            var createdPayment = await paymentRepository.CreatePayment(payment);
+           
+           return createdPayment;
         }
 
         public void DeletePayment(int id)
@@ -62,6 +69,54 @@ namespace TripVolunteer.Infra.Services
         }
 
         // ✅ العملية الموحدة
+        //public async Task<bool> PayAndGenerateInvoiceAsync(PaymentDto dto)
+        //{
+        //    // 1. خصم المبلغ من البنك
+        //    var result = _bankRepo.ProcessPayment(dto.BankId, dto.Amount);
+
+        //    if (result == -1)
+        //        throw new Exception("Insufficient balance.");
+        //    if (result == -2)
+        //        throw new Exception("Bank ID not found.");
+        //    if (result == -3)
+        //        throw new Exception("Unexpected error occurred.");
+
+        //    // 2. جلب الإيميل من قاعدة البيانات
+        //    var userEmail = _userRepository.GetEmailUsingCursor(dto.UserId);
+        //    if (string.IsNullOrEmpty(userEmail))
+        //        throw new Exception("User email not found.");
+
+        //    // 3. حفظ الدفع
+        //    var payment = new Payment
+        //    {
+        //        Paidat = DateTime.Now,
+        //        Paymentmethod = dto.Method,
+        //        Amount = dto.Amount
+        //    };
+        //    paymentRepository.CreatePayment(payment);
+
+        //    // 4. إنشاء الفاتورة
+        //    var invoice = new Invoice
+        //    {
+        //        Title = "Payment Invoice",
+        //        Description = $"Invoice for request #{dto.RequestId}",
+        //        Invoicelink = $"invoices/invoice_{dto.RequestId}.pdf",
+        //        Amount = dto.Amount,
+        //        Requestid = dto.RequestId
+        //    };
+        //    _invoiceRepo.makeInvoice(invoice);
+
+        //    // 5. توليد PDF مؤقت
+        //    var pdfBytes = GeneratePdf(invoice);
+
+        //    // 6. إرسال الإيميل
+        //    await _emailService.SendEmailWithPDFAsync(userEmail, "Your Invoice", "Please find attached invoice.", pdfBytes);
+
+        //    return true;
+        //}
+
+
+        //Payment with storing Invoice 
         public async Task<bool> PayAndGenerateInvoiceAsync(PaymentDto dto)
         {
             // 1. خصم المبلغ من البنك
@@ -86,7 +141,9 @@ namespace TripVolunteer.Infra.Services
                 Paymentmethod = dto.Method,
                 Amount = dto.Amount
             };
-            paymentRepository.CreatePayment(payment);
+            var createdPayment = await paymentRepository.CreatePayment(payment);
+            decimal paymentID = createdPayment.Paymentid;
+            tripReq.UpdateTripRequestPayment(dto.RequestId,paymentID);
 
             // 4. إنشاء الفاتورة
             var invoice = new Invoice
@@ -102,9 +159,24 @@ namespace TripVolunteer.Infra.Services
             // 5. توليد PDF مؤقت
             var pdfBytes = GeneratePdf(invoice);
 
-            // 6. إرسال الإيميل
+            // ✅ 6. حفظ الملف داخل مجلد Angular assets/invoices
+            var fileName = $"invoice_{dto.RequestId}.pdf";
+            var folderPath = Path.Combine("C:\\Users\\Sundos\\Downloads\\FinalFront\\FinalFront\\frontend\\src\\assets\\invoices");
+            var filePath = Path.Combine(folderPath, fileName);
+
+            // ✅ تأكد من وجود المجلد، وإذا لم يكن موجوداً فأنشئه
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            // ✅ حفظ ملف PDF فعلياً على المسار المحدد
+            await File.WriteAllBytesAsync(filePath, pdfBytes);
+
+            // 7. إرسال الإيميل مع نسخة مرفقة من الفاتورة
             await _emailService.SendEmailWithPDFAsync(userEmail, "Your Invoice", "Please find attached invoice.", pdfBytes);
 
+            
             return true;
         }
 
