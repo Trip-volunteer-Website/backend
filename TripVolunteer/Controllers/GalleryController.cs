@@ -37,7 +37,7 @@ namespace TripVolunteer.API.Controllers
 
             // Define the folder path to store images
 
-            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "C:\\Users\\Digi\\Desktop\\edit front\\frontend\\src\\assets\\images");
+            var folderPath = Path.Combine( "C:\\Users\\Digi\\Desktop\\edit front\\frontend\\src\\assets\\images");
 
             // Ensure the folder exists
 

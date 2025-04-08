@@ -20,6 +20,7 @@ namespace TripVolunteer.API.Controllers
         }
 
         [HttpPost]
+
         public void makeContact(Contact contact)
         {
             _contactService.makecontact(contact);
