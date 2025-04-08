@@ -37,7 +37,7 @@ namespace TripVolunteer.API.Controllers
 
             // Define the folder path to store images
 
-            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "C:\\Users\\Digi\\Desktop\\edit front\\frontend\\src\\assets\\images");
+            var folderPath = Path.Combine( "C:\\Users\\Sundos\\Downloads\\FinalFront\\FinalFront\\frontend\\src\\assets\\images");
 
             // Ensure the folder exists
 
@@ -78,7 +78,7 @@ namespace TripVolunteer.API.Controllers
                 throw new Exception("No file provided.");
 
             var fileName = Guid.NewGuid().ToString() + "_" + file.FileName;
-            var fullPath = Path.Combine("Images", fileName);
+            var fullPath = Path.Combine("C:\\Users\\Sundos\\Downloads\\FinalFront\\FinalFront\\frontend\\src\\assets\\images", fileName);
 
             using (var stream = new FileStream(fullPath, FileMode.Create))
             {

@@ -11,7 +11,7 @@ namespace TripVolunteer.Core.Services
     public interface IPaymentSarvice
     {
         List<Payment> GetAllPayment();
-        void CreatePayment(Payment payment);
+        Task<Payment> CreatePayment(Payment payment);
         void UpdatePayment(Payment payment);
         void DeletePayment(int id);
         Payment GetPaymentById(int id);

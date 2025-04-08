@@ -77,7 +77,7 @@ namespace TripVolunteer.API.Controllers
         {
             var file = Request.Form.Files[0];
             var filename = Guid.NewGuid().ToString() + "_" + file.FileName;
-            var fullpath = Path.Combine("C:\\Users\\Digi\\Desktop\\edit front\\frontend\\src\\assets\\CVs", filename);
+            var fullpath = Path.Combine("C:\\Users\\Sundos\\Downloads\\FinalFront\\FinalFront\\frontend\\src\\assets\\CVs", filename);
 
             using (var stream = new FileStream(fullpath, FileMode.Create))
             {
@@ -114,6 +114,8 @@ namespace TripVolunteer.API.Controllers
             {
                 if (triprequest.Requesttype == "User")
                 {
+                    user.Roleid = 2;
+                    _userRepo.UpdateUser(user);
                     subject = "You're Approved! Complete Your Payment";
                     message = $"Dear {fullName},\n\n" +
                               "Great news! Your trip request has been approved.\n\n" +
@@ -123,6 +125,8 @@ namespace TripVolunteer.API.Controllers
                 }
                 else if (triprequest.Requesttype == "Volunteer")
                 {
+                    user.Roleid = 3;
+                    _userRepo.UpdateUser(user);
                     subject = "Welcome to the Trip!";
                     message = $"Dear {fullName},\n\n" +
                               "Your volunteer request has been approved — welcome to the team!\n\n" +

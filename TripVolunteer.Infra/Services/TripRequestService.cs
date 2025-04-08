@@ -55,5 +55,9 @@ namespace TripVolunteer.Infra.Services
         {
             _tripRequestRepo.UpdateTripRequest(triprequest);
         }
+        public void UpdateTripRequestPayment(decimal Requestid, decimal Paymentid)
+        {
+            _tripRequestRepo.UpdateTripRequestPayment(Requestid, Paymentid);
+        }
     }
 }

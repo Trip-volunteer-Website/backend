@@ -60,7 +60,7 @@ namespace TripVolunteer.API.Controllers
         {
             var file = Request.Form.Files[0];
             var filename = Guid.NewGuid().ToString() + "_" + file.FileName;
-            var fullpath = Path.Combine("C:\\Users\\Digi\\Desktop\\edit front\\frontend\\src\\assets\\images", filename);
+            var fullpath = Path.Combine("C:\\Users\\Sundos\\Downloads\\FinalFront\\FinalFront\\frontend\\src\\assets\\images", filename);
             using (var stream = new FileStream(fullpath, FileMode.Create))
             { file.CopyTo(stream); }
             Staticabout item = new Staticabout();

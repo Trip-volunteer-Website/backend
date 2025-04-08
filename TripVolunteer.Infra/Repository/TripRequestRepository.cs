@@ -95,5 +95,12 @@ namespace TripVolunteer.Infra.Repository
             p.Add("payment_id", triprequest.Paymentid, DbType.Int32, ParameterDirection.Input);
             _dbContext.Connection.Execute("tripRequest_package.updateTripRequest", p, commandType: CommandType.StoredProcedure);
         }
+        public void UpdateTripRequestPayment(decimal Requestid, decimal Paymentid)
+        {
+            var p = new DynamicParameters();
+            p.Add("p_RequestId", Requestid, DbType.Decimal, ParameterDirection.Input);
+            p.Add("p_PaymentId", Paymentid, DbType.Decimal, ParameterDirection.Input);
+            _dbContext.Connection.Execute("tripRequest_package.updateTripRequestPayment", p, commandType: CommandType.StoredProcedure);
+        }
     }
 }

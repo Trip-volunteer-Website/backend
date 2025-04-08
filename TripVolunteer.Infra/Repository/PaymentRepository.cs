@@ -22,15 +22,23 @@ namespace TripVolunteer.Infra.Repository
             _dbConext = dbConext;
 
         }
-        public void CreatePayment(Payment payment)
+        public async Task<Payment> CreatePayment(Payment payment)
         {
 
             var p = new DynamicParameters();
             p.Add("payment_paidat", payment.Paidat, dbType: DbType.DateTime, direction: ParameterDirection.Input);
             p.Add("payment_method", payment.Paymentmethod, dbType: DbType.String, direction: ParameterDirection.Input);
             p.Add("payment_amount", payment.Amount, dbType: DbType.Int32, direction: ParameterDirection.Input);
-            var result = _dbConext.Connection.Execute("payment_package.makepayment", p, commandType: CommandType.StoredProcedure);
 
+            // OUT parameter to retrieve the new payment ID
+            p.Add("payment_id", dbType: DbType.Int32, direction: ParameterDirection.Output);
+
+            await _dbConext.Connection.ExecuteAsync("payment_package.makepayment", p, commandType: CommandType.StoredProcedure);
+
+            // Retrieve the generated payment ID
+            payment.Paymentid = p.Get<int>("payment_id");
+
+            return payment;
         }
 
         public void DeletePayment(int id)
