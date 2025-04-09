@@ -42,7 +42,7 @@ namespace TripVolunteer.API.Controllers
             var fileName = Guid.NewGuid().ToString() + "_" + file.FileName;
 
 
-            var fullPath = Path.Combine("C:\\Users\\Sundos\\Downloads\\FinalFront\\FinalFront\\frontend\\src\\assets\\images", fileName);
+            var fullPath = Path.Combine("C:\\Users\\Digi\\Desktop\\edit front\\frontend\\src\\assets\\images", fileName);
 
             using (var stream = new FileStream(fullPath, FileMode.Create))
             {

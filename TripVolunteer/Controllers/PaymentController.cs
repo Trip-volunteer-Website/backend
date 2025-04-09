@@ -55,15 +55,15 @@ namespace TripVolunteer.API.Controllers
         [Route("pay")]
         public async Task<IActionResult> Pay([FromBody] PaymentDto dto)
         {
-            //try
+            try { 
             
                 await paymentSarvice.PayAndGenerateInvoiceAsync(dto);
                 return Ok("✅ Payment completed and invoice sent to your email.");
-            
-            //catch (Exception ex)
-            //{
-            //    return BadRequest($"❌ Payment failed: {ex.Message}");
-            //}
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"❌ Payment failed: {ex.Message}");
+            }
         }
     }
 }
